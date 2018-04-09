@@ -1,0 +1,97 @@
+<div class="container"><h3>Stock Management </h3></div>
+	<div class = "stockdetails-header">
+	<p>Total stock in slaughter house <span>4500</span>kgs</p>
+	<p>Approximate weight of live bird<span>4000</span>kgs</p>
+	<p>Average weight per bird <span>2</span>kgs</p>
+	</div>
+<div id="exTab3" class="container">	
+<ul  class="nav nav-pills custom-placement">
+			<li class="active">
+        <a  href="#1b" data-toggle="tab" ng-click="prevent($event)">PURCHASE</a>
+			</li>
+			<li><a href="#2b" data-toggle="tab" ng-click="prevent($event)">STOCK</a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1b">
+         <form method="post" action="/users/register">
+   <div class="form-group">
+    <label>Party order</label>
+    <input type="text" class="form-control" placeholder="party order" name="partyorder">
+  </div>
+  <div class="form-group">
+    <label>Party Name</label>
+    <input type="text" class="form-control" placeholder="Party Name" name="PartyName">
+  </div>
+   <div class="form-group">
+    <label>Vehicle NO</label>
+    <input type="text" class="form-control" placeholder="Vehicle NO" name="VehicleNO">
+  </div>
+  <div class="form-group">
+    <label>Item</label>
+    <input type="text" class="form-control" placeholder="Item" name="Item">
+  </div>
+  <div class="form-group">
+    <label>No Of Birds</label>
+    <input type="text" class="form-control" placeholder="no of birds" name="noofbirds">
+  </div>
+    <div class="form-group">
+    <label>Price per Kg</label>
+    <input type="number" class="form-control" placeholder="price per kg" name="priceperkg">
+  </div>
+    <div class="form-group">
+    <label>Total</label>
+    <input type="number" class="form-control" placeholder="Total" name="Total">
+
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+  <button  class="btn btn-default">Cancel</button>
+</form>
+				</div>
+				<div class="tab-pane" id="2b">
+ 		
+ <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>P.Order NO</th>
+        <th>Party Number</th>
+        <th>Stock in date</th>
+        <th >No.of birds</th>
+        <th>Weight</th>
+        <th>Current Stock</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>7617</td>
+        <td>suguna chicken</td>
+        <td >19.3.18</td>
+        <td >3200</td>
+        <td >8400</td>
+        <td>4020</td>
+
+      </tr>
+      <tr >
+        <td>7617</td>
+        <td>shanthi chicken</td>
+        <td >19.3.18</td>
+        <td >3200</td>
+        <td >6400</td>
+        <td>4020</td>
+      </tr>      
+      <tr>
+        <td>7617</td>
+        <td>shanthi chicken</td>
+        <td >19.3.18</td>
+        <td >4300</td>
+        <td >5676</td>
+        <td>2009</td>
+      </tr>      
+    </tbody>
+  </table>
+<p class="final-details">Total <span class = "text-bold">4500 </span> Birds <span class = "text-bold">9000 </span>Kgs Avg.wt <span class = "text-bold">200</span> kgs</p>
+				</div>
+  </div>
